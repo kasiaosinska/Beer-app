@@ -83,7 +83,7 @@ class BeerDetails extends React.Component {
       <Wrapper className="overlay" onClick={this.closeModal}>
         <Modal>
           {error ?
-            <_Text>Something went wrong :(</_Text>
+            <_Text text="Something went wrong :(" />
             :
             Object.keys(beer).length !== 0 ?
               <ModalContent>

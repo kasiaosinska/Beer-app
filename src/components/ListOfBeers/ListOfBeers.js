@@ -46,7 +46,7 @@ class ListOfBeers extends React.Component {
     const { beers, error, hasMore, initialLoad, modal } = this.state
 
     if (error) {
-      return <_Text>Something went wrong :(</_Text>
+      return <_Text text="Something went wrong :(" />
     }
 
     return (
@@ -75,7 +75,7 @@ class ListOfBeers extends React.Component {
             </LinkElement>
           ))}
         </Wrapper>
-        {hasMore === false && initialLoad === false && <_Text>No more beers</_Text>}
+        {hasMore === false && initialLoad === false && <_Text text="No more beers" />}
         {modal && <BeerDetails />}
      </InfiniteScroll>
     )
